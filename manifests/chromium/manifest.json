@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Legal AI Companion",
+  "version": "0.1.0",
+  "description": "Демонстрационный помощник для интернет-версии системы ГАРАНТ.",
+  "content_scripts": [
+    {
+      "matches": ["https://internet.garant.ru/*"],
+      "js": ["content-script.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}
